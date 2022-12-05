@@ -39,7 +39,7 @@ import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
 
 import AuthApi from "../../api/auth";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import { useAuth } from "../../auth-context/auth.context";
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -230,13 +230,12 @@ const Login = () => {
                           </a>
                         </Col>
                         <Col className="text-right" xs="6">
-                          <a
+                          <Link
                             className="text-dark"
-                            href="#pablo"
-                            onClick={(e) => e.preventDefault()}
+                            to="/register-page"
                           >
                             <small>Create new account</small>
-                          </a>
+                          </Link>
                         </Col>
                       </Row>
                     </CardBody>

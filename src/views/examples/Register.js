@@ -40,7 +40,7 @@ import SimpleFooter from "components/Footers/SimpleFooter.js";
 
 import AuthApi from "../../api/auth";
 import { useAuth } from "../../auth-context/auth.context";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 const Register = () => {
   const [formData, setFormData] = useState({});
@@ -231,6 +231,16 @@ const Register = () => {
                           Create account
                         </Button>
                       </div>
+                      <Row className="mt-3">
+                        <Col className="text-center" xs="12">
+                          <small>
+                            Already have an account?
+                          </small>
+                          <Link className="text-dark ml-1" to="/login-page">
+                            <small>Login</small>
+                          </Link>
+                        </Col>
+                      </Row>
                     </Form>
                   </CardBody>)}
                 </Card>
