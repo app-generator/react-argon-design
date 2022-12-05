@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 // reactstrap components
 import {
@@ -38,73 +38,122 @@ import {
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
 
-class Login extends React.Component {
-  componentDidMount() {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
-    this.refs.main.scrollTop = 0;
+import AuthApi from "../../api/auth";
+import { useHistory } from "react-router-dom";
+import { useAuth } from "../../auth-context/auth.context";
+const Login = () => {
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+  const [error, setError] = useState("");
+  const mainRef = useRef(0)
+
+  const { user, setUser } = useAuth();
+  const history = useHistory();
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    })
   }
-  render() {
-    return (
-      <>
-        <DemoNavbar />
-        <main ref="main">
-          <section className="section section-shaped section-lg">
-            <div className="shape shape-style-1 bg-gradient-default">
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-            </div>
-            <Container className="pt-lg-7">
-              <Row className="justify-content-center">
-                <Col lg="5">
-                  <Card className="bg-secondary shadow border-0">
-                    <CardHeader className="bg-white pb-5">
-                      <div className="text-muted text-center mb-3">
-                        <small>Sign in with</small>
-                      </div>
-                      <div className="btn-wrapper text-center">
-                        <Button
-                          className="btn-neutral btn-icon"
-                          color="default"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <span className="btn-inner--icon mr-1">
-                            <img
-                              alt="..."
-                              src={
-                                require("assets/img/icons/common/github.svg")
-                                  .default
-                              }
-                            />
-                          </span>
-                          <span className="btn-inner--text">Github</span>
-                        </Button>
-                        <Button
-                          className="btn-neutral btn-icon ml-1"
-                          color="default"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <span className="btn-inner--icon mr-1">
-                            <img
-                              alt="..."
-                              src={
-                                require("assets/img/icons/common/google.svg")
-                                  .default
-                              }
-                            />
-                          </span>
-                          <span className="btn-inner--text">Google</span>
-                        </Button>
-                      </div>
-                    </CardHeader>
+
+  const setProfile = (response) => {
+    let user = { ...response.data.user };
+    user.token = response.data.token;
+    user = JSON.stringify(user);
+    setUser(user);
+    localStorage.setItem("user", user);
+    return history.push("/");
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    AuthApi.Login(formData).then((response) => {
+      if(response.data.success) {
+        return setProfile(response);
+      }
+      return setError(response.data.msg)
+    }).catch((error) => {
+      if (error.response) {
+        return setError(error.response.data.msg);
+      }
+      return setError("There has been an error.");
+    })
+  }
+
+  useEffect(() => {
+      document.documentElement.scrollTop = 0;
+      document.scrollingElement.scrollTop = 0;
+      mainRef.current.scrollTop = 0;
+  }, [])
+
+  return (
+    <>
+      <DemoNavbar />
+      <main ref={mainRef}>
+        <section className="section section-shaped section-lg">
+          <div className="shape shape-style-1 bg-gradient-default">
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+          </div>
+          <Container className="pt-lg-7">
+            <Row className="justify-content-center">
+              <Col lg="5">
+                <Card className="bg-secondary shadow border-0">
+                  <CardHeader className="bg-white pb-5">
+                    <div className="text-muted text-center mb-3">
+                      <small>Sign in with</small>
+                    </div>
+                    <div className="btn-wrapper text-center">
+                      <Button
+                        className="btn-neutral btn-icon"
+                        color="default"
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        <span className="btn-inner--icon mr-1">
+                          <img
+                            alt="..."
+                            src={
+                              require("assets/img/icons/common/github.svg")
+                                .default
+                            }
+                          />
+                        </span>
+                        <span className="btn-inner--text">Github</span>
+                      </Button>
+                      <Button
+                        className="btn-neutral btn-icon ml-1"
+                        color="default"
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        <span className="btn-inner--icon mr-1">
+                          <img
+                            alt="..."
+                            src={
+                              require("assets/img/icons/common/google.svg")
+                                .default
+                            }
+                          />
+                        </span>
+                        <span className="btn-inner--text">Google</span>
+                      </Button>
+                    </div>
+                  </CardHeader>
+                  {user && user.token ? (
+                    <div className="text-center my-5">
+                      <p><b>You are already logged in</b></p>
+                    </div>
+                  ) : (
                     <CardBody className="px-lg-5 py-lg-5">
                       <div className="text-center text-muted mb-4">
                         <small>Or sign in with credentials</small>
@@ -117,7 +166,13 @@ class Login extends React.Component {
                                 <i className="ni ni-email-83" />
                               </InputGroupText>
                             </InputGroupAddon>
-                            <Input placeholder="Email" type="email" />
+                            <Input 
+                              placeholder="Email" 
+                              name="email" 
+                              onChange={handleChange} 
+                              type="email" 
+                              value={formData?.email}
+                            />
                           </InputGroup>
                         </FormGroup>
                         <FormGroup>
@@ -131,6 +186,9 @@ class Login extends React.Component {
                               placeholder="Password"
                               type="password"
                               autoComplete="off"
+                              name="password" 
+                              value={formData?.password}
+                              onChange={handleChange}
                             />
                           </InputGroup>
                         </FormGroup>
@@ -147,47 +205,51 @@ class Login extends React.Component {
                             <span>Remember me</span>
                           </label>
                         </div>
+                        <div className="text-danger text-center mt-3 mb-1">
+                          <small>{ error }</small>
+                        </div>
                         <div className="text-center">
                           <Button
                             className="my-4"
                             color="primary"
                             type="button"
+                            onClick={handleSubmit}
                           >
                             Sign in
                           </Button>
                         </div>
                       </Form>
+                      <Row className="mt-3">
+                        <Col xs="6">
+                          <a
+                            className="text-dark"
+                            href="#pablo"
+                            onClick={(e) => e.preventDefault()}
+                          >
+                            <small>Forgot password?</small>
+                          </a>
+                        </Col>
+                        <Col className="text-right" xs="6">
+                          <a
+                            className="text-dark"
+                            href="#pablo"
+                            onClick={(e) => e.preventDefault()}
+                          >
+                            <small>Create new account</small>
+                          </a>
+                        </Col>
+                      </Row>
                     </CardBody>
-                  </Card>
-                  <Row className="mt-3">
-                    <Col xs="6">
-                      <a
-                        className="text-light"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <small>Forgot password?</small>
-                      </a>
-                    </Col>
-                    <Col className="text-right" xs="6">
-                      <a
-                        className="text-light"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <small>Create new account</small>
-                      </a>
-                    </Col>
-                  </Row>
-                </Col>
-              </Row>
-            </Container>
-          </section>
-        </main>
-        <SimpleFooter />
-      </>
-    );
-  }
+                  )}
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+      </main>
+      <SimpleFooter />
+    </>
+  );
 }
 
 export default Login;
