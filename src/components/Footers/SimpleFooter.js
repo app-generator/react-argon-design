@@ -107,29 +107,29 @@ class SimpleFooter extends React.Component {
             <Row className=" align-items-center justify-content-md-between">
               <Col md="6">
                 <div className=" copyright">
-                  © {new Date().getFullYear()}{" "}
+                  &copy; {" "}
                   <a
-                    href="https://www.creative-tim.com?ref=adsr-footer"
+                    href="https://www.creative-tim.com?AFFILIATE=128200"
                     target="_blank"
                   >
                     Creative Tim
                   </a>
-                  .
+                  {" - "} coded by AppSeed.
                 </div>
               </Col>
               <Col md="6">
                 <Nav className=" nav-footer justify-content-end">
                   <NavItem>
                     <NavLink
-                      href="https://www.creative-tim.com?ref=adsr-footer"
+                      href="https://appseed.us/product/argon-design-system/api-server-nodejs/react/"
                       target="_blank"
                     >
-                      Creative Tim
+                      Download
                     </NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      href="https://www.creative-tim.com/presentation?ref=adsr-footer"
+                      href="https://appseed.us/about/"
                       target="_blank"
                     >
                       About Us
@@ -137,18 +137,10 @@ class SimpleFooter extends React.Component {
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      href="http://blog.creative-tim.com?ref=adsr-footer"
+                      href="https://blog.appseed.us/"
                       target="_blank"
                     >
                       Blog
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink
-                      href="https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md"
-                      target="_blank"
-                    >
-                      MIT License
                     </NavLink>
                   </NavItem>
                 </Nav>

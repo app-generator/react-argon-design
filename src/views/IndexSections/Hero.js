@@ -69,7 +69,7 @@ class Hero extends React.Component {
                       <Button
                         className="btn-icon mb-3 mb-sm-0"
                         color="github"
-                        href="https://github.com/creativetimofficial/argon-design-system-react"
+                        href="https://github.com/app-generator/react-argon-design"
                         size="lg"
                         target="_blank"
                       >

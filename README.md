@@ -1,217 +1,157 @@
-# [Argon Design System React](https://demos.creative-tim.com/argon-design-system-react?ref=adsr-github-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Argon%20Design%20System%20is%20a%20Free%20Bootstrap%204,%20React%20and%20Reactstrap%20Dashboard%20made%20using%20create-react-app%20%E2%9D%A4%EF%B8%8F%0Ahttps%3A//demos.creative-tim.com/argon-design-system-react%20%23react%20%23reactstrap%20%23createreactapp%20%23argon%20%23argondesign%20%23reactkit%20%23argonreact%20%23reactdesign%20%23bootstrap%20%23design%20%23uikit%20%23freebie%20%20via%20%40CreativeTim)
+# [React Argon Design](https://appseed.us/product/argon-design-system/api-server-nodejs/react/)
 
-![version](https://img.shields.io/badge/version-1.1.1-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/argon-design-system-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/argon-design-system-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/argon-design-system-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/argon-design-system-react/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
+Start your development with a Design System for Bootstrap, `React` and `Reactstrap`. It is open source, free and it features many components that can help you create amazing websites.
+The product comes with a simple **JWT** authentication flow: `login/register/logout`. 
 
-![Product Gif](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-design-system-react/argon-design-system-react.gif)
+- 👉 [React Argon Design](https://appseed.us/product/argon-design-system/api-server-nodejs/react/) - `product page`
+- 👉 [React Argon Design](https://react-argon-design.appseed-srv1.com/) - `LIVE Demo`
 
-Start your development with a Design System for [Bootstrap 4](https://getbootstrap.com/?ref=creativetim), [React](https://reactjs.org/?ref=creativetim) and [Reactstrap](https://reactstrap.github.io/?ref=creativetim). It is open source, free and it features many components that can help you create amazing websites.
+<br />
 
-**Fully Coded Components**
+> 🚀 Built with **[React App Generator](https://appseed.us/generator/react/)**
 
-Argon Design System React is built with over 100 individual components, giving you the freedom of choosing and combining. All components can take variations in color, that you can easily modify using SASS files.
+- ✅ Innovative **Argon Design System** - Crafted by [Creative-Tim](https://bit.ly/3fKQZaL)
+- ✅ React, Redux, Redux-persist
+- ✅ Full-stack ready using **[Node JS API Server](https://appseed.us/boilerplate-code/nodejs-starter/)** (open-source project)
+  - Features: Typescript / SQLite / TypeORM / Joy (validation) / Passport library - `passport-jwt` strategy.
 
-You will save a lot of time going from prototyping to full-functional code, because all elements are implemented. This Design System is coming with prebuilt examples, so the development process is seamless, switching from our pages to the real website is very easy to be done.
+<br />
 
-Every element has multiple states for colors, styles, hover, focus, that you can easily access and use.
+![React Argon Design - Open-Source Fullstack starter crafted by Creative-Tim and AppSeed.](https://user-images.githubusercontent.com/51070104/206225228-85e663a2-40e6-4346-bff2-c5c3ebd7dc4b.png)
 
-View [all components here](https://demos.creative-tim.com/argon-design-system-react/#/?ref=adsr-github-readme).
+<br />
 
-**Complex Documentation**
+## Tests
 
-Each element is well presented in a very complex documentation. You can read more about the [idea behind this design system here](https://demos.creative-tim.com/argon-design-system-react/#/documentation/overview?ref=adsr-github-readme). You can [check the components here](https://demos.creative-tim.com/argon-design-system-react/#/documentation/alert?ref=adsr-github-readme) and [the foundation here](https://demos.creative-tim.com/argon-design-system-react/#/documentation/colors?ref=adsr-github-readme).
+> `Compatibility matrix` using Ubuntu `18.04 LTS` as reference.
 
-**Example Pages**
+| NodeJS | NPM | YARN | 
+| --- | --- | --- |  
+| `v14.0.0` | ✅ | ❌ |
+| `v15.0.0` | ✅ | ❌ | 
+| `v16.15.0` | ✅ | ✅ | 
 
-If you want to get inspiration or just show something directly to your clients, you can jump start your development with our pre-built example pages. You will be able to quickly set up the basic structure for your web project.
+<br />
 
-View [example pages here](https://demos.creative-tim.com/argon-design-system-react/#/landing-page?ref=adsr-github-readme).
+## ✨ How to use it
 
-## Table of Contents
+To use the product Node JS (>= 14.x) is required and GIT to clone/download the project from the public repository.
 
-- [Versions](#versions)
-- [Demo](#demo)
-- [Quick Start](#quick-start)
-- [Documentation](#documentation)
-- [File Structure](#file-structure)
-- [Browser Support](#browser-support)
-- [Resources](#resources)
-- [Reporting Issues](#reporting-issues)
-- [Licensing](#licensing)
-- [Useful Links](#useful-links)
+> 👉 **Step #1** - Clone the project
 
-## Versions
-
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/argon-design-system)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/angular-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/argon-design-system-angular)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/vue-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/vue-argon-design-system)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/argon-design-system-react)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/sketch-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/argon-design-system-react)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/photoshop-logo.jpg" width="60" height="60" />](https://www.creative-tim.com/product/argon-design-system-react)
-
-| HTML                                                                                                                                                                                                                                  | Angular                                                                                                                                                                                                                                                          | Vue                                                                                                                                                                                                                                              | React                                                                                                                                                                                                                                                    |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Argon Design System HTML](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system/argon-design-system.jpg?raw=true)](https://www.creative-tim.com/product/argon-design-system?ref=adsr-github-readme) | [![Argon Design System Angular](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system-angular/argon-design-system-angular.jpg?raw=true)](https://www.creative-tim.com/product/argon-design-system-angular?ref=adsr-github-readme) | [![Vue Argon Design System](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-design-system/vue-argon-design-system.jpg?raw=true)](https://www.creative-tim.com/product/vue-argon-design-system?ref=adsr-github-readme) | [![Argon Design System React](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system-react/argon-design-system-react.jpg?raw=true)](https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-github-readme) |
-
-## Demo
-
-| Buttons                                                                                                                                                                                    | Inputs                                                                                                                                                                                   | Navbars                                                                                                                                                                                   |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Buttons](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system-react/buttons.png?raw=true)](https://demos.creative-tim.com/argon-design-system-react/#/) | [![Inputs](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system-react/inputs.png?raw=true)](https://demos.creative-tim.com/argon-design-system-react/#/) | [![Navbar](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system-react/navbars.png?raw=true)](https://demos.creative-tim.com/argon-design-system-react/#/) |
-
-| Login Page                                                                                                                                                                                             | Landing Page                                                                                                                                                                                                | Profile Page                                                                                                                                                                                                | Register Page                                                                                                                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Login Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-design-system-react/login.png)](https://demos.creative-tim.com/argon-design-system-react/#/login-page) | [![Landing Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system-react/landing.png?raw=true)](https://demos.creative-tim.com/argon-design-system-react/#/landing-page) | [![Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system-react/profile.png?raw=true)](https://demos.creative-tim.com/argon-design-system-react/#/profile-page) | [![Register Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system-react/register.png?raw=true)](https://demos.creative-tim.com/argon-design-system-react/#/register-page) |
-
-[View More](https://demos.creative-tim.com/argon-design-system-react?ref=adsr-github-readme)
-
-## Quick start
-
-- `npm i argon-design-system-react`
-- [Download from Github](https://github.com/creativetimofficial/argon-design-system-react/archive/master.zip).
-- [Download from Creative Tim](https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-github-readme).
-- Install with [Bower](https://bower.io/?ref=creativetim): `bower install argon-design-system-react`.
-- Clone the repo: `git clone https://github.com/creativetimofficial/argon-design-system-react.git`.
-
-## Documentation
-
-The documentation for the Argon Design System React is hosted at our [website](https://demos.creative-tim.com/argon-design-system-react/#/documentation/overview).
-
-## File Structure
-
-Within the download you'll find the following directories and files:
-
-```
-Argon Design System React
-.
-├── CHANGELOG.md
-├── ISSUE_TEMPLATE.md
-├── LICENSE
-├── README.md
-├── jsconfig.json
-├── package.json
-├── Documentation
-│   └── documentation.html
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   └── manifest.json
-└── src
-    ├── assets
-    │   ├── css
-    │   │   ├── argon-design-system-react.css
-    │   │   ├── argon-design-system-react.css.map
-    │   │   └── argon-design-system-react.min.css
-    │   ├── img
-    │   │   ├── brand
-    │   │   ├── icons
-    │   │   │   └── common
-    │   │   ├── ill
-    │   │   └── theme
-    │   ├── scss
-    │   │   ├── argon-design-system-react.scss
-    │   │   ├── bootstrap
-    │   │   │   ├── mixins
-    │   │   │   └── utilities
-    │   │   ├── custom
-    │   │   │   ├── mixins
-    │   │   │   ├── utilities
-    │   │   │   └── vendor
-    │   │   └── react
-    │   │       ├── custom
-    │   │       │   └── vendor
-    │   │       └── react-differences.scss
-    │   └── vendor
-    │       ├── font-awesome
-    │       │   ├── css
-    │       │   └── fonts
-    │       └── nucleo
-    │           ├── css
-    │           └── fonts
-    ├── components
-    │   ├── Footers
-    │   │   ├── CardsFooter.js
-    │   │   └── SimpleFooter.js
-    │   └── Navbars
-    │       └── DemoNavbar.js
-    ├── index.js
-    └── views
-        ├── Index.js
-        ├── IndexSections
-        │   ├── Alerts.js
-        │   ├── Buttons.js
-        │   ├── Carousel.js
-        │   ├── CustomControls.js
-        │   ├── Datepicker.js
-        │   ├── Download.js
-        │   ├── Hero.js
-        │   ├── Icons.js
-        │   ├── Inputs.js
-        │   ├── Labels.js
-        │   ├── Login.js
-        │   ├── Menus.js
-        │   ├── Modals.js
-        │   ├── Navbars.js
-        │   ├── Pagination.js
-        │   ├── Pills.js
-        │   ├── Progress.js
-        │   ├── Tabs.js
-        │   ├── TooltipPopover.js
-        │   └── Typography.js
-        └── examples
-            ├── Landing.js
-            ├── Login.js
-            ├── Profile.js
-            └── Register.js
+```bash
+$ git clone https://github.com/app-generator/react-argon-design.git
+$ cd react-argon-design
 ```
 
-## Browser Support
+<br >
 
-At present, we officially aim to support the last two versions of the following browsers:
+> 👉 **Step #2** - Install dependencies via NPM or yarn
 
-<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/chrome-logo.png?raw=true" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/firefox-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/edge-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/safari-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/opera-logo.png" width="64" height="64">
+```bash
+$ npm i
+// OR
+$ yarn
+```
 
-## Resources
+<br />
 
-- Demo: <https://demos.creative-tim.com/argon-design-system-react/#/?ref=adsr-github-readme>
-- Download Page: <https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-github-readme>
-- Documentation: <https://demos.creative-tim.com/argon-design-system-react/#/documentation/overview?ref=adsr-github-readme>
-- License Agreement: <https://www.creative-tim.com/license?ref=adsr-github-readme>
-- Support: <https://www.creative-tim.com/contact-us?ref=adsr-github-readme>
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/argon-design-system-react/issues?ref=creativetim)
-- **Dashboard:**
+> 👉 **Step 3** - Edit the `.env` using the template `.env.sample`. 
 
-| HTML                                                                                                                                                                                                                   | Angular                                                                                                                                                                                                                                          | Vue                                                                                                                                                                                                       | React                                                                                                                                                                                                                                    | Laravel                                                                                                                                                                                                                                          | NodeJS                                                                                                                                                                                                                                        |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Argon Dashboard  HTML](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard/argon-dashboard.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard?ref=adsr-github-readme) | [![Argon Dashboard Angular](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-angular/argon-dashboard-angular.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard-angular?ref=adsr-github-readme) | [![Vue Argon Dashboard](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-dashboard/vue-argon-dashboard.jpg?raw=true)](https://www.creative-tim.com/product/vue-argon-dashboard) | [![Argon Dashboard React](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-react/argon-dashboard-react.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard-react?ref=adsr-github-readme) | [![Argon Dashboard Laravel](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-laravel/argon-dashboard-laravel.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard-laravel?ref=adsr-github-readme) | [![Argon Dashboard NodeJS](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-nodejs/argon-dashboard-nodejs.jpg)](https://www.creative-tim.com/product/argon-dashboard-nodejs?ref=adsr-github-readme) |
+```env
 
-## Reporting Issues
+REACT_APP_BACKEND_SERVER='http://localhost:5000/api/'
 
-We use GitHub Issues as the official bug tracker for the Argon Design System React. Here are some advices for our users that want to report an issue:
+```
 
-1. Make sure that you are using the latest version of the Argon Design System React. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=adsr-github-readme).
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
+<br />
 
-## Licensing
+> 👉 **Step #4** - Start in development mode
 
-- Copyright 2022 Creative Tim (https://www.creative-tim.com/?ref=adsr-github-readme)
+```bash
+$ npm run start 
+// OR
+$ yarn start
+```
 
-- Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md?ref=creativetim)
+<br />
 
-## Useful Links
+## ✨ Configure the backend server
 
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w?ref=creativetim)
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=adsr-github-readme) (earn money)
-- [Blog Creative Tim](http://blog.creative-tim.com/?ref=adsr-github-readme)
-- [Free Products](https://www.creative-tim.com/bootstrap-themes/free?ref=adsr-github-readme) from Creative Tim
-- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=adsr-github-readme) from Creative Tim
-- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=adsr-github-readme) from Creative Tim
-- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes?ref=adsr-github-readme) from Creative Tim
-- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes?ref=adsr-github-readme) from Creative Tim
-- [More products](https://www.creative-tim.com/bootstrap-themes?ref=adsr-github-readme) from Creative Tim
-- Check our Bundles [here](https://www.creative-tim.com/bundles?ref=adsr-github-readme)
+The product comes with a usable JWT Authentication flow that provides only the basic requests: login/logout/register. 
 
-### Social Media
+> 👉 **API Server URL** - `src/config/constant.js` 
 
-Twitter: <https://twitter.com/CreativeTim?ref=creativetim>
+```javascript
+const config = {
+    ...
+    API_SERVER: 'http://localhost:5000/api/'  // <-- The magic line
+};
+```
 
-Facebook: <https://www.facebook.com/CreativeTim?ref=creativetim>
+<br />
 
-Dribbble: <https://dribbble.com/creativetim?ref=creativetim>
+> 👉 **API Server Descriptor** - POSTMAN Collection
 
-Instagram: <https://www.instagram.com/CreativeTimOfficial?ref=creativetim>
+The API Server signature is provided by the [Unified API Definition](https://docs.appseed.us/boilerplate-code/api-unified-definition)
+
+- [API POSTMAN Collection](https://github.com/app-generator/api-server-unified/blob/main/api.postman_collection.json) - can be used to mock (simulate) the backend server or code a new one in your preferred framework. 
+
+<br />
+
+## ✨ Node JS API Server
+
+The product is also open-source and is already configured to work with Berry Dashboard Template - product features:
+
+- Typescript / Node js / Express server
+- JWT authentication (`passport-jwt` strategy)
+- Persistence: SQLite 
+
+> Links
+
+- [Node JS API](https://github.com/app-generator/api-server-nodejs) - source code
+- [Node JS API](https://appseed.us/boilerplate-code/nodejs-starter) - product page
+
+<br />
+
+![Node JS API - Open-source API server built on top of Express Nodejs Framework.](https://user-images.githubusercontent.com/51070104/124934824-c210a700-e00d-11eb-9d01-e05bd8bfb608.png)
+
+<br />
+
+### Compile the API Server
+
+> 👉 **Step #1** - Clone the project
+
+```bash
+$ git clone https://github.com/app-generator/api-server-nodejs.git
+$ cd api-server-nodejs
+```
+
+> 👉 **Step #2** - Install dependencies via NPM or Yarn
+
+```bash
+$ npm i
+// OR
+$ yarn
+```
+
+> 👉 **Step #3** - Run the SQLite migration via TypeORM
+
+```
+$ yarn typeorm migration:run
+```
+
+> 👉 **Step #4** - Start the API server (development mode)
+
+```bash
+$ npm dev
+// OR
+$ yarn dev
+```
+
+The API server will start using the `PORT` specified in `.env` file (default 5000).
+
+<br /> 
+
+---
+[React Argon Design](https://appseed.us/product/argon-design-system/api-server-nodejs/react/) - Provided by **[AppSeed](https://appseed.us/app-generator)**.

@@ -116,13 +116,13 @@ const DemoNavbar = () => {
                 <UncontrolledDropdown nav>
                   <DropdownToggle nav>
                     <i className="ni ni-ui-04 d-lg-none mr-1" />
-                    <span className="nav-link-inner--text">Components</span>
+                    <span className="nav-link-inner--text">Resources</span>
                   </DropdownToggle>
                   <DropdownMenu className="dropdown-menu-xl">
                     <div className="dropdown-menu-inner">
                       <Media
                         className="d-flex align-items-center"
-                        href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/overview?ref=adsr-navbar"
+                        href="https://appseed.us/support/"
                         target="_blank"
                       >
                         <div className="icon icon-shape bg-gradient-primary rounded-circle text-white">
@@ -130,17 +130,16 @@ const DemoNavbar = () => {
                         </div>
                         <Media body className="ml-3">
                           <h6 className="heading text-primary mb-md-1">
-                            Getting started
+                            Support
                           </h6>
                           <p className="description d-none d-md-inline-block mb-0">
-                            Learn how to use Argon compiling Scss, change
-                            brand colors and more.
+                            Get assistance via Email & Discord
                           </p>
                         </Media>
                       </Media>
                       <Media
                         className="d-flex align-items-center"
-                        href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/colors?ref=adsr-navbar"
+                        href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/colors?AFFILIATE=128200"
                         target="_blank"
                       >
                         <div className="icon icon-shape bg-gradient-success rounded-circle text-white">
@@ -158,7 +157,7 @@ const DemoNavbar = () => {
                       </Media>
                       <Media
                         className="d-flex align-items-center"
-                        href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alert?ref=adsr-navbar"
+                        href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alert?AFFILIATE=128200"
                         target="_blank"
                       >
                         <div className="icon icon-shape bg-gradient-warning rounded-circle text-white">
@@ -202,9 +201,8 @@ const DemoNavbar = () => {
                 <NavItem>
                   <NavLink
                     className="nav-link-icon"
-                    href="https://www.facebook.com/creativetim"
+                    href="#"
                     id="tooltip333589074"
-                    target="_blank"
                   >
                     <i className="fa fa-facebook-square" />
                     <span className="nav-link-inner--text d-lg-none ml-2">
@@ -218,9 +216,8 @@ const DemoNavbar = () => {
                 <NavItem>
                   <NavLink
                     className="nav-link-icon"
-                    href="https://www.instagram.com/creativetimofficial"
+                    href="#"
                     id="tooltip356693867"
-                    target="_blank"
                   >
                     <i className="fa fa-instagram" />
                     <span className="nav-link-inner--text d-lg-none ml-2">
@@ -234,9 +231,8 @@ const DemoNavbar = () => {
                 <NavItem>
                   <NavLink
                     className="nav-link-icon"
-                    href="https://twitter.com/creativetim"
+                    href="#"
                     id="tooltip184698705"
-                    target="_blank"
                   >
                     <i className="fa fa-twitter-square" />
                     <span className="nav-link-inner--text d-lg-none ml-2">
@@ -250,7 +246,7 @@ const DemoNavbar = () => {
                 <NavItem>
                   <NavLink
                     className="nav-link-icon"
-                    href="https://github.com/creativetimofficial/argon-design-system-react"
+                    href="https://github.com/app-generator/react-argon-design"
                     id="tooltip112445449"
                     target="_blank"
                   >
@@ -278,7 +274,7 @@ const DemoNavbar = () => {
                     <Button
                       className="btn-neutral btn-icon"
                       color="default"
-                      href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-navbar"
+                      href="https://appseed.us/product/argon-design-system/api-server-nodejs/react/"
                       target="_blank"
                     >
                       <span className="btn-inner--icon">

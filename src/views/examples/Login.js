@@ -109,44 +109,8 @@ const Login = () => {
               <Col lg="5">
                 <Card className="bg-secondary shadow border-0">
                   <CardHeader className="bg-white pb-5">
-                    <div className="text-muted text-center mb-3">
-                      <small>Sign in with</small>
-                    </div>
-                    <div className="btn-wrapper text-center">
-                      <Button
-                        className="btn-neutral btn-icon"
-                        color="default"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <span className="btn-inner--icon mr-1">
-                          <img
-                            alt="..."
-                            src={
-                              require("assets/img/icons/common/github.svg")
-                                .default
-                            }
-                          />
-                        </span>
-                        <span className="btn-inner--text">Github</span>
-                      </Button>
-                      <Button
-                        className="btn-neutral btn-icon ml-1"
-                        color="default"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <span className="btn-inner--icon mr-1">
-                          <img
-                            alt="..."
-                            src={
-                              require("assets/img/icons/common/google.svg")
-                                .default
-                            }
-                          />
-                        </span>
-                        <span className="btn-inner--text">Google</span>
-                      </Button>
+                    <div className="text-muted text-center mb-1">
+                      Sign IN
                     </div>
                   </CardHeader>
                   {user && user.token ? (
@@ -156,7 +120,9 @@ const Login = () => {
                   ) : (
                     <CardBody className="px-lg-5 py-lg-5">
                       <div className="text-center text-muted mb-4">
-                        <small>Or sign in with credentials</small>
+                        <small>
+                          Add credentials (email / password)
+                        </small>
                       </div>
                       <Form role="form">
                         <FormGroup className="mb-3">
