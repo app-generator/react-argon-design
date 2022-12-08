@@ -86,7 +86,7 @@ class Landing extends React.Component {
                         <Button
                           className="btn-icon mb-3 mb-sm-0"
                           color="info"
-                          href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alerts?ref=adsr-landing-page"
+                          href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alerts?AFFILIATE=128200"
                         >
                           <span className="btn-inner--icon mr-1">
                             <i className="fa fa-code" />
@@ -96,7 +96,7 @@ class Landing extends React.Component {
                         <Button
                           className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                           color="default"
-                          href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
+                          href="https://appseed.us/product/argon-design-system/api-server-nodejs/react/"
                         >
                           <span className="btn-inner--icon mr-1">
                             <i className="ni ni-cloud-download-95" />
