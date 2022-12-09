@@ -153,5 +153,21 @@ The API server will start using the `PORT` specified in `.env` file (default 500
 
 <br /> 
 
+## [React Argon Design PRO](https://appseed.us/product/argon-design-system-pro/full-stack/)
+
+> For more components, pages and priority on support, feel free to take a look at this amazing starter:
+
+`Argon Design React PRO` is built with over 100 frontend individual elements, like buttons, inputs, navbars, alerts or cards, giving you the freedom of choosing and combining. The product comes with a simple JWT authentication flow: login/register/logout. 
+
+- 👉 [React Argon Design PRO](https://appseed.us/product/argon-design-system-pro/full-stack/) - Product Page
+  - ✅ `Enhanced UI` - more pages and components
+  - ✅ `Priority` on support
+
+<br >
+
+![React Argon Design PRO - Premium Fullstack starter crafted by Creative-Tim and AppSeed.](https://user-images.githubusercontent.com/51070104/206378423-541acda7-1022-419e-998e-716ade757906.png)
+
+<br />
+
 ---
 [React Argon Design](https://appseed.us/product/argon-design-system/api-server-nodejs/react/) - Provided by **[AppSeed](https://appseed.us/app-generator)**.
