@@ -1,4 +1,4 @@
-# [React Argon Design](https://appseed.us/product/argon-design-system/api-server-nodejs/react/)
+# [React Argon Design](https://appseed.us/product/argon-design-system/api-server-nodejs/react/) `full-stack`
 
 Start your development with a modern Design System for Bootstrap, `React` and `Reactstrap`. [React Argon System](https://appseed.us/product/argon-design-system/api-server-nodejs/react/) is open source, and it features many components that can help you create amazing websites.
 The product comes with a simple **JWT** authentication flow: `login/register/logout`. 
