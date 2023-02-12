@@ -10,7 +10,7 @@ The product comes with a simple **JWT** authentication flow: `login/register/log
 
 > 🚀 Built with **[React App Generator](https://appseed.us/generator/react/)**
 
-- ✅ Innovative **Argon Design System** - Crafted by [Creative-Tim](https://bit.ly/3fKQZaL)
+- ✅ Innovative `Argon Design System` - **Crafted by [Creative-Tim](https://www.creative-tim.com/?AFFILIATE=128200)**
 - ✅ React, Redux, Redux-persist
 - ✅ Full-stack ready using **[Node JS API Server](https://appseed.us/boilerplate-code/nodejs-starter/)** (open-source project)
   - Features: Typescript / SQLite / TypeORM / Joy (validation) / Passport library - `passport-jwt` strategy.
